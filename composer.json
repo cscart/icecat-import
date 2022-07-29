@@ -1,0 +1,37 @@
+{
+    "name": "cscart/icecat-import",
+    "description": "Import product catalog from icecat",
+    "type": "cscart-addon",
+    "version": "1.0.0",
+    "require": {
+        "cscart/core": "^1.0",
+        "ext-xmlreader": "*"
+    },
+    "authors": [
+        {
+            "name": "CS-Cart",
+            "email": "info@cs-cart.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CSCart\\Icecat\\": "src/"
+        }
+    },
+    "extra": {
+        "cscart": {
+            "name": "Icecat",
+            "description": "Data importer.",
+            "providers": [
+                "\\CSCart\\Icecat\\IcecatServiceProvider"
+            ],
+            "translations": {
+                "ru": {
+                    "name": "Data Importer",
+                    "description": "Data Importer."
+                }
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
